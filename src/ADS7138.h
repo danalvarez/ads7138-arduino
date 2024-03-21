@@ -1,12 +1,14 @@
 //**********************************************************************************
 /**
   @file     ADS7138.h
-  @copyright Copyright (C) 2021 Texas Instruments Incorporated - http://www.ti.com/
 
   Author: Dan Alvarez
 
-  This is a library for the TI ADS7138 SAR ADC. Register definitions taken from
-  TI-provided header file. See https://www.ti.com/tool/download/SBAC286.
+  This is a library for the TI ADS7138 SAR ADC.
+  
+  Register definitions taken from TI-provided header file.
+  See https://www.ti.com/tool/download/SBAC286
+  Copyright (C) 2021 Texas Instruments Incorporated - http://www.ti.com/
 
 */
 //**********************************************************************************

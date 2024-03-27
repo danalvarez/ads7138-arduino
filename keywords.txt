@@ -1,0 +1,47 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+ADS7138	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+setReferenceVoltage	KEYWORD2
+writeRegister8	KEYWORD2
+configureOpMode	KEYWORD2
+configureSequenceMode	KEYWORD2
+configureOsr	KEYWORD2
+selectChannel	KEYWORD2
+read	KEYWORD2
+readChannel	KEYWORD2
+readVoltage	KEYWORD2
+readChannelVoltage	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+SINGLE_REGISTER_WRITE LITERAL1
+OSR_CFG_ADDRESS	LITERAL1
+OSR_CFG_DEFAULT	LITERAL1
+OSR_MASK	LITERAL1
+OPMODE_CFG_ADDRESS	LITERAL1
+OPMODE_CFG_DEFAULT	LITERAL1
+CONV_ON_ERR_MASK	LITERAL1
+CONV_MODE_MASK	LITERAL1
+OSC_SEL_MASK	LITERAL1
+CLK_DIV_MASK	LITERAL1
+SEQUENCE_CFG_ADDRESS    LITERAL1
+SEQUENCE_CFG_DEFAULT    LITERAL1
+SEQ_START_MASK  LITERAL1
+SEQ_MODE_MASK   LITERAL1
+MANUAL_CH_SEL_ADDRESS   LITERAL1
+MANUAL_CH_SEL_DEFAULT   LITERAL1
+MANUAL_CHID_MASK    LITERAL1

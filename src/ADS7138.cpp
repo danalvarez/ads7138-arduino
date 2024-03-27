@@ -42,6 +42,8 @@ void ADS7138::begin(int sda, int scl, int deviceAddress) {
     _currentOsr = OSR_1;
     // ADC reference voltage (assume 3.3 V)
     _referenceVoltage = 3300;
+    // default channel
+    _currentChannel = MANUAL_CHID_AIN0;
 }
 
 /**
@@ -117,6 +119,7 @@ void ADS7138::configureOsr(ADS7138__OSR osr){
  * @param channel The channel to select.
  */
 void ADS7138::selectChannel(ADS7138__MANUAL_CHID channel) {
+    _currentChannel = channel;
     writeRegister8(MANUAL_CH_SEL_ADDRESS, channel & MANUAL_CHID_MASK);
 }
 
@@ -153,7 +156,7 @@ uint16_t ADS7138::read() {
  * @return uint16_t The value read from the ADS7138 device.
  */
 uint16_t ADS7138::readChannel(ADS7138__MANUAL_CHID channel) {
-    selectChannel(channel);
+    if(channel != _currentChannel) selectChannel(channel);
     return read();
 }
 
@@ -178,6 +181,6 @@ uint32_t ADS7138::readVoltage() {
  * @return uint32_t The voltage in mV.
  */
 uint32_t ADS7138::readChannelVoltage(ADS7138__MANUAL_CHID channel) {
-    selectChannel(channel);
+    if(channel != _currentChannel) selectChannel(channel);
     return readVoltage();
 }

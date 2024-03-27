@@ -164,6 +164,7 @@ class ADS7138 {
         uint8_t _deviceAddress;
         uint32_t _referenceVoltage;
         ADS7138__OSR _currentOsr;
+        ADS7138__MANUAL_CHID _currentChannel;
 };
 
 #endif
